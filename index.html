@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="/main.css" rel="stylesheet" />
+
+        <!-- defines css styles -->
+        <style></style>
+
+        <!-- executes javascript if no src is defined. e.g src='' -->
+        <script></script>
+    </head>
+    <body class="dark">
+        <!-- provides a generic container for various purposes -->
+        <div>brian</div>
+
+        <!-- title heading -->
+        <h3>chase page</h3>
+
+        <!-- provides a container for text blocks -->
+        <p></p>
+
+        <!-- inserts a line break -->
+        <br />
+
+        <!-- wraps inline elements for styling -->
+        <span style="color:red">this is chase</span>
+        <br />
+
+        <!-- shows an image -->
+        <img src="/chase.png" />
+        <br />
+
+        <!-- makes a hyperlink -->
+        <a href="https://emkc.org">go to emkc.org</a>
+        <br />
+
+        <!-- makes a table for data -->
+        <table>
+            <thead>
+                <tr>
+                    <th>pet name</th>
+                    <th>age</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>chase</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>chase</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>chase</td>
+                    <td>3</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- An HTML form is used to collect user input. The user input is most often sent to a server for processing. -->
+        <h2>HTML Forms</h2>
+        <form action="/action_page.php">
+            <label for="fname">First name:</label><br>
+            <input type="text" id="fname" name="fname" value="John"><br>
+            <label for="lname">Last name:</label><br>
+            <input type="text" id="lname" name="lname" value="Doe"><br><br>
+            <input type="submit" value="Submit">
+        </form> 
+          <p>If you click the "Submit" button, the form-data will be sent to a page called "/action_page.php".</p>
+
+          <h2>An Unordered HTML List</h2>
+
+          <!-- HTML lists allow web developers to group a set of related items in lists. -->
+          <ul>
+            <li>Coffee</li>
+            <li>Tea</li>
+            <li>Milk</li>
+          </ul>  
+          
+          <h2>An Ordered HTML List</h2>
+          
+          <ol>
+            <li>Coffee</li>
+            <li>Tea</li>
+            <li>Milk</li>
+          </ol> 
+
+
+        <!-- shows literal text as it is written here, also does not wrap lines -->
+        <pre>
+            indented? indented? indented? indented? indented? indented? indented?
+    HELcksapcjoiej 
+        </pre>
+
+        <!-- defines a form for user input. action defines where the data should be submitted (usually a website) -->
+        <form action="/somewhere" method="post">
+            <!-- creates a simple single line input -->
+            <div>
+                what is your name?
+                <input type="text" />
+            </div>
+
+            <!-- creates a radio selection style input -->
+            <div>
+                are you male or female?
+                <!-- type="radio" allows the selection or non selection. Also if you give different radios same name attribute then browser will take care of selecting only one -->
+                <input type="radio" name="gender" /> male
+                <input type="radio" name="gender" /> female
+            </div>
+
+            <!-- creates a dropdown style input -->
+            <div>
+                favorite dog
+                <select>
+                    <option value=""></option>
+                    <!-- here value="chase" will be sent to server while text <chase> will be shown on website-->
+                    <option value="chase">chase</option>
+                </select>
+            </div>
+
+            <!-- creates a multiline input -->
+            <div>
+                send chase a nice message
+                <br />
+                <textarea></textarea>
+            </div>
+
+            <!-- creates a checkbox type input -->
+            <div>
+                check to confirm you love chase
+                <!-- type="checkbox" is different to type="radio" that one can select multiple checkboxes while only one radio can be selected at one time -->
+                <input type="checkbox" />
+            </div>
+            <!-- button could be type="submit" and type='button' is that "submit" will post the form data to the server while "button" will do nothing unless programmed to do so -->
+            <button type="submit">send data</button>
+        </form>
+    </body>
+</html>
